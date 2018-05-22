@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UberRidder/SignInVC.swift"
+            timestampString = "518068310.42269"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1"
+            endingLineNumber = "1">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UberRidder.SignInVC.__deallocating_deinit"
+                  moduleName = "UberRidder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/msa/Desktop/UberRidder/UberRidder/SignInVC.swift"
+                  timestampString = "518107131.797106"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UberRidder.SignInVC.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; UberRidder.SignInVC"
+                  moduleName = "UberRidder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/msa/Desktop/UberRidder/UberRidder/SignInVC.swift"
+                  timestampString = "518107131.799294"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "81">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UberRidder.SignInVC.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; UberRidder.SignInVC"
+                  moduleName = "UberRidder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/msa/Desktop/UberRidder/UberRidder/SignInVC.swift"
+                  timestampString = "518107131.804887"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UberRidder.SignInVC.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;UberRidder.SignInVC&gt;"
+                  moduleName = "UberRidder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/msa/Desktop/UberRidder/UberRidder/SignInVC.swift"
+                  timestampString = "518107131.80764"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UberRidder.SignInVC.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;UberRidder.SignInVC&gt;"
+                  moduleName = "UberRidder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/msa/Desktop/UberRidder/UberRidder/SignInVC.swift"
+                  timestampString = "518107131.809612"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "38">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

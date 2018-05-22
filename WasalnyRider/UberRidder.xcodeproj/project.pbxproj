@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05521EC08B3D107126FEB7AA /* Pods_UberRidderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E02906205827750AAFDF94D /* Pods_UberRidderTests.framework */; };
+		4E2066011EE11AC6000476DD /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2066001EE11AC6000476DD /* SignInVC.swift */; };
+		4E21160B1EEF0AC7005B0793 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E21160A1EEF0AC7005B0793 /* TableViewCell.swift */; };
+		4E21160D1EEF0AE5005B0793 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E21160C1EEF0AE5005B0793 /* TableViewController.swift */; };
+		4E34A82A1EEE6BE500304A7C /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E34A8291EEE6BE500304A7C /* Ride.swift */; };
+		4E7453B41EDF4F3900938A8F /* UberHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7453B31EDF4F3900938A8F /* UberHandler.swift */; };
+		4E75D09D1EDB77CD00379CC8 /* RiderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E75D09C1EDB77CD00379CC8 /* RiderVC.swift */; };
+		4E75D0A51EDB91F100379CC8 /* DBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E75D0A41EDB91F100379CC8 /* DBProvider.swift */; };
+		4E75D0A71EDB920600379CC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E75D0A61EDB920600379CC8 /* Constants.swift */; };
+		4E7F038C1ED8B182009EAA29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F038B1ED8B182009EAA29 /* AppDelegate.swift */; };
+		4E7F03911ED8B183009EAA29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E7F038F1ED8B183009EAA29 /* Main.storyboard */; };
+		4E7F03931ED8B183009EAA29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E7F03921ED8B183009EAA29 /* Assets.xcassets */; };
+		4E7F03961ED8B183009EAA29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E7F03941ED8B183009EAA29 /* LaunchScreen.storyboard */; };
+		4E7F03A11ED8B183009EAA29 /* UberRidderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F03A01ED8B183009EAA29 /* UberRidderTests.swift */; };
+		4E7F03AC1ED8B183009EAA29 /* UberRidderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F03AB1ED8B183009EAA29 /* UberRidderUITests.swift */; };
+		4E7F03FE1ED8CEFD009EAA29 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E7F03FD1ED8CEFD009EAA29 /* GoogleService-Info.plist */; };
+		4E7F04061ED8DB88009EAA29 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F04051ED8DB88009EAA29 /* AuthProvider.swift */; };
+		4EB194071EEDE85300E724B8 /* PorfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB194061EEDE85300E724B8 /* PorfileVC.swift */; };
+		4EB194091EEE023F00E724B8 /* ProfileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB194081EEE023F00E724B8 /* ProfileHandler.swift */; };
+		5A52FFA7B636516BEE3985A9 /* Pods_UberRidder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AEA41296AB513FCA35BF97 /* Pods_UberRidder.framework */; };
+		7EAB0FB19CD681F2E6A23834 /* Pods_UberRidderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531221AD389F3E5B7AFA0231 /* Pods_UberRidderUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E7F039D1ED8B183009EAA29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E7F03801ED8B182009EAA29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E7F03871ED8B182009EAA29;
+			remoteInfo = UberRidder;
+		};
+		4E7F03A81ED8B183009EAA29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E7F03801ED8B182009EAA29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E7F03871ED8B182009EAA29;
+			remoteInfo = UberRidder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		098151CAD23BA01B5B027DF8 /* Pods-UberRidder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberRidder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UberRidder/Pods-UberRidder.debug.xcconfig"; sourceTree = "<group>"; };
+		24AEA41296AB513FCA35BF97 /* Pods_UberRidder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UberRidder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E2066001EE11AC6000476DD /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		4E21160A1EEF0AC7005B0793 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4E21160C1EEF0AE5005B0793 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		4E34A8291EEE6BE500304A7C /* Ride.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
+		4E7453B31EDF4F3900938A8F /* UberHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UberHandler.swift; sourceTree = "<group>"; };
+		4E75D09C1EDB77CD00379CC8 /* RiderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiderVC.swift; sourceTree = "<group>"; };
+		4E75D0A41EDB91F100379CC8 /* DBProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBProvider.swift; sourceTree = "<group>"; };
+		4E75D0A61EDB920600379CC8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4E7F03881ED8B182009EAA29 /* UberRidder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberRidder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E7F038B1ED8B182009EAA29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E7F03901ED8B183009EAA29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4E7F03921ED8B183009EAA29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E7F03951ED8B183009EAA29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E7F03971ED8B183009EAA29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E7F039C1ED8B183009EAA29 /* UberRidderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberRidderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E7F03A01ED8B183009EAA29 /* UberRidderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberRidderTests.swift; sourceTree = "<group>"; };
+		4E7F03A21ED8B183009EAA29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E7F03A71ED8B183009EAA29 /* UberRidderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberRidderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E7F03AB1ED8B183009EAA29 /* UberRidderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberRidderUITests.swift; sourceTree = "<group>"; };
+		4E7F03AD1ED8B183009EAA29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E7F03FD1ED8CEFD009EAA29 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4E7F04051ED8DB88009EAA29 /* AuthProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		4EB194061EEDE85300E724B8 /* PorfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PorfileVC.swift; sourceTree = "<group>"; };
+		4EB194081EEE023F00E724B8 /* ProfileHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHandler.swift; sourceTree = "<group>"; };
+		531221AD389F3E5B7AFA0231 /* Pods_UberRidderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UberRidderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E02906205827750AAFDF94D /* Pods_UberRidderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UberRidderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		721AB37FE1BA3D4F937FCB2A /* Pods-UberRidderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberRidderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UberRidderTests/Pods-UberRidderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9DCC983E8E33863DD3ED95DC /* Pods-UberRidderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberRidderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UberRidderTests/Pods-UberRidderTests.release.xcconfig"; sourceTree = "<group>"; };
+		A409F7526DE4985EEA3C00DA /* Pods-UberRidderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberRidderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UberRidderUITests/Pods-UberRidderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ADA499C7413F495B1A79A7BC /* Pods-UberRidderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberRidderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UberRidderUITests/Pods-UberRidderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DCB650EF955D4965A5D1AE0C /* Pods-UberRidder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberRidder.release.xcconfig"; path = "Pods/Target Support Files/Pods-UberRidder/Pods-UberRidder.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E7F03851ED8B182009EAA29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A52FFA7B636516BEE3985A9 /* Pods_UberRidder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E7F03991ED8B183009EAA29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05521EC08B3D107126FEB7AA /* Pods_UberRidderTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E7F03A41ED8B183009EAA29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EAB0FB19CD681F2E6A23834 /* Pods_UberRidderUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2632DE45F08B34C801C8BEF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24AEA41296AB513FCA35BF97 /* Pods_UberRidder.framework */,
+				5E02906205827750AAFDF94D /* Pods_UberRidderTests.framework */,
+				531221AD389F3E5B7AFA0231 /* Pods_UberRidderUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E7F037F1ED8B182009EAA29 = {
+			isa = PBXGroup;
+			children = (
+				4E7F038A1ED8B182009EAA29 /* UberRidder */,
+				4E7F039F1ED8B183009EAA29 /* UberRidderTests */,
+				4E7F03AA1ED8B183009EAA29 /* UberRidderUITests */,
+				4E7F03891ED8B182009EAA29 /* Products */,
+				887B665C93F3722AA1D8E2B0 /* Pods */,
+				2632DE45F08B34C801C8BEF1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4E7F03891ED8B182009EAA29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E7F03881ED8B182009EAA29 /* UberRidder.app */,
+				4E7F039C1ED8B183009EAA29 /* UberRidderTests.xctest */,
+				4E7F03A71ED8B183009EAA29 /* UberRidderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E7F038A1ED8B182009EAA29 /* UberRidder */ = {
+			isa = PBXGroup;
+			children = (
+				4E7F04041ED8DB73009EAA29 /* PlugIns */,
+				4E7F03F81ED8C1A7009EAA29 /* Controller */,
+				4E7F03F71ED8C1A1009EAA29 /* View */,
+				4E7F03F61ED8C19B009EAA29 /* Model */,
+				4E7F038B1ED8B182009EAA29 /* AppDelegate.swift */,
+				4E7F038F1ED8B183009EAA29 /* Main.storyboard */,
+				4E7F03921ED8B183009EAA29 /* Assets.xcassets */,
+				4E7F03941ED8B183009EAA29 /* LaunchScreen.storyboard */,
+				4E7F03971ED8B183009EAA29 /* Info.plist */,
+				4E7F03FD1ED8CEFD009EAA29 /* GoogleService-Info.plist */,
+			);
+			path = UberRidder;
+			sourceTree = "<group>";
+		};
+		4E7F039F1ED8B183009EAA29 /* UberRidderTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E7F03A01ED8B183009EAA29 /* UberRidderTests.swift */,
+				4E7F03A21ED8B183009EAA29 /* Info.plist */,
+			);
+			path = UberRidderTests;
+			sourceTree = "<group>";
+		};
+		4E7F03AA1ED8B183009EAA29 /* UberRidderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4E7F03AB1ED8B183009EAA29 /* UberRidderUITests.swift */,
+				4E7F03AD1ED8B183009EAA29 /* Info.plist */,
+			);
+			path = UberRidderUITests;
+			sourceTree = "<group>";
+		};
+		4E7F03F61ED8C19B009EAA29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E34A8291EEE6BE500304A7C /* Ride.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4E7F03F71ED8C1A1009EAA29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4E7F03F81ED8C1A7009EAA29 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4E2066001EE11AC6000476DD /* SignInVC.swift */,
+				4E75D09C1EDB77CD00379CC8 /* RiderVC.swift */,
+				4EB194061EEDE85300E724B8 /* PorfileVC.swift */,
+				4E21160A1EEF0AC7005B0793 /* TableViewCell.swift */,
+				4E21160C1EEF0AE5005B0793 /* TableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4E7F04041ED8DB73009EAA29 /* PlugIns */ = {
+			isa = PBXGroup;
+			children = (
+				4E7F04051ED8DB88009EAA29 /* AuthProvider.swift */,
+				4E75D0A41EDB91F100379CC8 /* DBProvider.swift */,
+				4E75D0A61EDB920600379CC8 /* Constants.swift */,
+				4E7453B31EDF4F3900938A8F /* UberHandler.swift */,
+				4EB194081EEE023F00E724B8 /* ProfileHandler.swift */,
+			);
+			name = PlugIns;
+			sourceTree = "<group>";
+		};
+		887B665C93F3722AA1D8E2B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				098151CAD23BA01B5B027DF8 /* Pods-UberRidder.debug.xcconfig */,
+				DCB650EF955D4965A5D1AE0C /* Pods-UberRidder.release.xcconfig */,
+				721AB37FE1BA3D4F937FCB2A /* Pods-UberRidderTests.debug.xcconfig */,
+				9DCC983E8E33863DD3ED95DC /* Pods-UberRidderTests.release.xcconfig */,
+				ADA499C7413F495B1A79A7BC /* Pods-UberRidderUITests.debug.xcconfig */,
+				A409F7526DE4985EEA3C00DA /* Pods-UberRidderUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E7F03871ED8B182009EAA29 /* UberRidder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E7F03B01ED8B183009EAA29 /* Build configuration list for PBXNativeTarget "UberRidder" */;
+			buildPhases = (
+				411DE48CBF7603EFC68394DA /* [CP] Check Pods Manifest.lock */,
+				4E7F03841ED8B182009EAA29 /* Sources */,
+				4E7F03851ED8B182009EAA29 /* Frameworks */,
+				4E7F03861ED8B182009EAA29 /* Resources */,
+				B3556263FAE80046544FADC6 /* [CP] Embed Pods Frameworks */,
+				3B1AD88EA9A60BC0ECFDF146 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UberRidder;
+			productName = UberRidder;
+			productReference = 4E7F03881ED8B182009EAA29 /* UberRidder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E7F039B1ED8B183009EAA29 /* UberRidderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E7F03B31ED8B183009EAA29 /* Build configuration list for PBXNativeTarget "UberRidderTests" */;
+			buildPhases = (
+				D264AB6C5DB4499053A45486 /* [CP] Check Pods Manifest.lock */,
+				4E7F03981ED8B183009EAA29 /* Sources */,
+				4E7F03991ED8B183009EAA29 /* Frameworks */,
+				4E7F039A1ED8B183009EAA29 /* Resources */,
+				6A145479871F418484D09AC6 /* [CP] Embed Pods Frameworks */,
+				510655A8FBEF75162AB69D4F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E7F039E1ED8B183009EAA29 /* PBXTargetDependency */,
+			);
+			name = UberRidderTests;
+			productName = UberRidderTests;
+			productReference = 4E7F039C1ED8B183009EAA29 /* UberRidderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4E7F03A61ED8B183009EAA29 /* UberRidderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E7F03B61ED8B183009EAA29 /* Build configuration list for PBXNativeTarget "UberRidderUITests" */;
+			buildPhases = (
+				F6C5A985574B50C1253ABE02 /* [CP] Check Pods Manifest.lock */,
+				4E7F03A31ED8B183009EAA29 /* Sources */,
+				4E7F03A41ED8B183009EAA29 /* Frameworks */,
+				4E7F03A51ED8B183009EAA29 /* Resources */,
+				804D53598202B900E549F7F7 /* [CP] Embed Pods Frameworks */,
+				434D0C8209195246EE3BC8FC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E7F03A91ED8B183009EAA29 /* PBXTargetDependency */,
+			);
+			name = UberRidderUITests;
+			productName = UberRidderUITests;
+			productReference = 4E7F03A71ED8B183009EAA29 /* UberRidderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E7F03801ED8B182009EAA29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = MSA;
+				TargetAttributes = {
+					4E7F03871ED8B182009EAA29 = {
+						CreatedOnToolsVersion = 8.3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					4E7F039B1ED8B183009EAA29 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4E7F03871ED8B182009EAA29;
+					};
+					4E7F03A61ED8B183009EAA29 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4E7F03871ED8B182009EAA29;
+					};
+				};
+			};
+			buildConfigurationList = 4E7F03831ED8B182009EAA29 /* Build configuration list for PBXProject "UberRidder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E7F037F1ED8B182009EAA29;
+			productRefGroup = 4E7F03891ED8B182009EAA29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E7F03871ED8B182009EAA29 /* UberRidder */,
+				4E7F039B1ED8B183009EAA29 /* UberRidderTests */,
+				4E7F03A61ED8B183009EAA29 /* UberRidderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E7F03861ED8B182009EAA29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E7F03961ED8B183009EAA29 /* LaunchScreen.storyboard in Resources */,
+				4E7F03FE1ED8CEFD009EAA29 /* GoogleService-Info.plist in Resources */,
+				4E7F03931ED8B183009EAA29 /* Assets.xcassets in Resources */,
+				4E7F03911ED8B183009EAA29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E7F039A1ED8B183009EAA29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E7F03A51ED8B183009EAA29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B1AD88EA9A60BC0ECFDF146 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UberRidder/Pods-UberRidder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		411DE48CBF7603EFC68394DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		434D0C8209195246EE3BC8FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UberRidderUITests/Pods-UberRidderUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		510655A8FBEF75162AB69D4F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UberRidderTests/Pods-UberRidderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A145479871F418484D09AC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UberRidderTests/Pods-UberRidderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		804D53598202B900E549F7F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UberRidderUITests/Pods-UberRidderUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3556263FAE80046544FADC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UberRidder/Pods-UberRidder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D264AB6C5DB4499053A45486 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F6C5A985574B50C1253ABE02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E7F03841ED8B182009EAA29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E21160B1EEF0AC7005B0793 /* TableViewCell.swift in Sources */,
+				4E21160D1EEF0AE5005B0793 /* TableViewController.swift in Sources */,
+				4E7F04061ED8DB88009EAA29 /* AuthProvider.swift in Sources */,
+				4E7F038C1ED8B182009EAA29 /* AppDelegate.swift in Sources */,
+				4E75D0A51EDB91F100379CC8 /* DBProvider.swift in Sources */,
+				4E7453B41EDF4F3900938A8F /* UberHandler.swift in Sources */,
+				4E34A82A1EEE6BE500304A7C /* Ride.swift in Sources */,
+				4EB194071EEDE85300E724B8 /* PorfileVC.swift in Sources */,
+				4E2066011EE11AC6000476DD /* SignInVC.swift in Sources */,
+				4EB194091EEE023F00E724B8 /* ProfileHandler.swift in Sources */,
+				4E75D09D1EDB77CD00379CC8 /* RiderVC.swift in Sources */,
+				4E75D0A71EDB920600379CC8 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E7F03981ED8B183009EAA29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E7F03A11ED8B183009EAA29 /* UberRidderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E7F03A31ED8B183009EAA29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E7F03AC1ED8B183009EAA29 /* UberRidderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E7F039E1ED8B183009EAA29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E7F03871ED8B182009EAA29 /* UberRidder */;
+			targetProxy = 4E7F039D1ED8B183009EAA29 /* PBXContainerItemProxy */;
+		};
+		4E7F03A91ED8B183009EAA29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E7F03871ED8B182009EAA29 /* UberRidder */;
+			targetProxy = 4E7F03A81ED8B183009EAA29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E7F038F1ED8B183009EAA29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E7F03901ED8B183009EAA29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4E7F03941ED8B183009EAA29 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E7F03951ED8B183009EAA29 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E7F03AE1ED8B183009EAA29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E7F03AF1ED8B183009EAA29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E7F03B11ED8B183009EAA29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 098151CAD23BA01B5B027DF8 /* Pods-UberRidder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = UberRidder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Msa.UberRidder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UberRidder/UberRidder-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4E7F03B21ED8B183009EAA29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCB650EF955D4965A5D1AE0C /* Pods-UberRidder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = UberRidder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Msa.UberRidder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UberRidder/UberRidder-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4E7F03B41ED8B183009EAA29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 721AB37FE1BA3D4F937FCB2A /* Pods-UberRidderTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UberRidderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Msa.UberRidderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UberRidder.app/UberRidder";
+			};
+			name = Debug;
+		};
+		4E7F03B51ED8B183009EAA29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DCC983E8E33863DD3ED95DC /* Pods-UberRidderTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UberRidderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Msa.UberRidderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UberRidder.app/UberRidder";
+			};
+			name = Release;
+		};
+		4E7F03B71ED8B183009EAA29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADA499C7413F495B1A79A7BC /* Pods-UberRidderUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = UberRidderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Msa.UberRidderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = UberRidder;
+			};
+			name = Debug;
+		};
+		4E7F03B81ED8B183009EAA29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A409F7526DE4985EEA3C00DA /* Pods-UberRidderUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = UberRidderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Msa.UberRidderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = UberRidder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E7F03831ED8B182009EAA29 /* Build configuration list for PBXProject "UberRidder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E7F03AE1ED8B183009EAA29 /* Debug */,
+				4E7F03AF1ED8B183009EAA29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E7F03B01ED8B183009EAA29 /* Build configuration list for PBXNativeTarget "UberRidder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E7F03B11ED8B183009EAA29 /* Debug */,
+				4E7F03B21ED8B183009EAA29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E7F03B31ED8B183009EAA29 /* Build configuration list for PBXNativeTarget "UberRidderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E7F03B41ED8B183009EAA29 /* Debug */,
+				4E7F03B51ED8B183009EAA29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E7F03B61ED8B183009EAA29 /* Build configuration list for PBXNativeTarget "UberRidderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E7F03B71ED8B183009EAA29 /* Debug */,
+				4E7F03B81ED8B183009EAA29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E7F03801ED8B182009EAA29 /* Project object */;
+}
